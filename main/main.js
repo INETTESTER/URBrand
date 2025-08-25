@@ -3,17 +3,17 @@ import { sleep } from 'k6';
 import { error_check } from '../check/check.js';
 import { scenario } from 'k6/execution';
 
-import { ran } from '../api/script.js';
-import { callback_scb } from '../api/getJson.js';
+
+import { Urbrand_Homepage } from '../api/Urbrand_Homepage.js';
+import { Urbrand_Homepage2 } from '../api/Urbrand_Homepage2.js';
 
 
 
 //============================================================================
 
 export default function () {    //เรียกใช้ API ใน export default function
-  response = ran()
-  //response = callback_scb(scenario)
-
+  response = Urbrand_Homepage()
+  response = Urbrand_Homepage2()
   
   error_check(response);
   sleep(1)
