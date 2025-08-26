@@ -6,7 +6,7 @@
 ##########################################################################
                      API="Urbrand_Homepage" 
                      google_sheet="https://docs.google.com/spreadsheets/d/1ufZQ7CavRslhfbw2y5We5GU2-TIFA9N6wQt97nxiwzg/edit?gid=1585513650#gid=1585513650" 
-                     id="39"                 #เปลี่ยน id ทุกครั้งที่ยิง
+                     id="50"                 #เปลี่ยน id ทุกครั้งที่ยิง
                      user="500";            #จำนวนผู้ใช้งาน
                      duration="1";         #วินาที
                      scenario="1"           #scenario="1" ยิงเเบบกำหนด request (duration ได้แค่ 1 วินาที)

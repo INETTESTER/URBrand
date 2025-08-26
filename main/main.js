@@ -13,7 +13,7 @@ import { Urbrand_Homepage2 } from '../api/Urbrand_Homepage2.js';
 
 export default function () {    //เรียกใช้ API ใน export default function
   response = Urbrand_Homepage()
-  response = Urbrand_Homepage2()
+  //response = Urbrand_Homepage2()
   
   error_check(response);
   sleep(1)
