@@ -1,21 +1,11 @@
 import http from 'k6/http';
 
-export function filter() {
-    const url = 'https://pentest-ngc.one.th/api/backend_2/partner/search/product/filter';
+// ฟังก์ชันตาม path สุดท้าย: "get_product_detail"
+export function Product_Detail() {
+    const url = 'https://pentest-ngc.one.th/api/backend/api/erp/get_product_detail';
 
     const payload = JSON.stringify({
-        "role_user": "ext_buyer",
-        "company_id": "-1",
-        "limit": 20,
-        "page": 1,
-        "category": "835",
-        "seller_shop_id": "3446",
-        "orderBy": "",
-        "status_product": "",
-        "promotion_buy_get_free": {
-            "minimumBuy": 0,
-            "totalFree": 0
-        }
+        product_id: "337300"
     });
 
     const params = {
@@ -24,7 +14,6 @@ export function filter() {
             'accept-language': 'th,en-US;q=0.9,en;q=0.8',
             'api-key': '7f91a017cb8d40e3b591bc24d29be5fd-f8c0ab7d27b14d5e9dc30ee460a187ef',
             'api-secret': 'b90e40cc6744f8797ec87ad0a7a03da-ec7f93c9242545b9a66e8c225cfdfe74d4c3f8499fd74d4d8991a7df60c32072',
-            'authorization': 'Bearer undefined',
             'content-type': 'application/json',
             'origin': 'https://homemaxmassage.com',
             'priority': 'u=1, i',
@@ -40,9 +29,9 @@ export function filter() {
         },
     };
 
-    const res = http.post(url, payload, params);
+    let res = http.post(url, payload, params);
 
-    console.log("Response body: ", res.body);
+    //console.log(res.body); // log response body
 
     return res;
 }

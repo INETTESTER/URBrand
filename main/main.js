@@ -6,6 +6,15 @@ import { scenario } from 'k6/execution';
 
 import { Urbrand_Homepage } from '../api/Urbrand_Homepage.js';
 import { Urbrand_Homepage2 } from '../api/Urbrand_Homepage2.js';
+import { Filter_Specific_Product } from '../api/Filter_Specific_Product.js';
+import { Filter_All_Product } from '../api/Filter_All_Product.js';
+import { Product_Detail } from '../api/Product_Detail.js';
+import { Search_Bar } from '../api/Search_Bar.js';
+import { List_User_Address } from '../api/List_User_Address.js';
+import { Detail_Cart } from '../api/Detail_Cart.js';
+import { Get_Cart } from '../api/Get_Cart.js';
+import { List_Category } from '../api/List_Category.js';
+import { Order_List } from '../api/Order_List.js';
 
 
 
@@ -14,7 +23,19 @@ import { Urbrand_Homepage2 } from '../api/Urbrand_Homepage2.js';
 export default function () {    //เรียกใช้ API ใน export default function
   response = Urbrand_Homepage()
   //response = Urbrand_Homepage2()
-  
+
+  //============ NGC ========================
+  // response = Filter_Specific_Product()
+  // response = Filter_All_Product()
+  // response = Product_Detail()
+  // response = Search_Bar()
+  // response = List_User_Address()
+  // response = Detail_Cart()
+  // response = Get_Cart()
+  // response = List_Category()
+  // response = Order_List()
+
+
   error_check(response);
   sleep(1)
 }
