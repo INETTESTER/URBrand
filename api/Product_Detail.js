@@ -29,7 +29,7 @@ export function Product_Detail() {
         },
     };
 
-    let res = http.post(url, payload, params);
+    const res = http.post(url, payload, params);
 
     //console.log(res.body); // log response body
 

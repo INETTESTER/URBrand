@@ -21,14 +21,14 @@ import { Order_List } from '../api/Order_List.js';
 //============================================================================
 
 export default function () {    //เรียกใช้ API ใน export default function
-  response = Urbrand_Homepage()
+  //response = Urbrand_Homepage()
   //response = Urbrand_Homepage2()
 
   //============ NGC ========================
   // response = Filter_Specific_Product()
   // response = Filter_All_Product()
   // response = Product_Detail()
-  // response = Search_Bar()
+   response = Search_Bar()
   // response = List_User_Address()
   // response = Detail_Cart()
   // response = Get_Cart()
