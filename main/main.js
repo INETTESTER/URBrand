@@ -25,10 +25,10 @@ export default function () {    //เรียกใช้ API ใน export def
   //response = Urbrand_Homepage2()
 
   //============ NGC ========================
-  // response = Filter_Specific_Product()
+   response = Filter_Specific_Product()
   // response = Filter_All_Product()
   // response = Product_Detail()
-   response = Search_Bar()
+  // response = Search_Bar()
   // response = List_User_Address()
   // response = Detail_Cart()
   // response = Get_Cart()

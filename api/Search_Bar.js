@@ -42,7 +42,7 @@ export function Search_Bar() {
 
     let res = http.post(url, payload, params);
 
-    //console.log(res.body); // log response body
+    console.log(res.body); // log response body
 
     return res;
 }

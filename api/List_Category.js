@@ -23,7 +23,7 @@ export function List_Category() {
     'Cookie': 'laravel_session=Xj2toaB0m8tVZw2gOoBpxYZYiWrlmreIMW0VFJ0K',
   };
 
-  let res = http.post(url, null, { headers });  // API นี้เป็น POST แต่ไม่มี body
+  let res = http.get(url, { headers });  // API นี้เป็น POST แต่ไม่มี body
   //console.log('Response:', res.body);
   return res
 }

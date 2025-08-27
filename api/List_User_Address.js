@@ -4,7 +4,6 @@ import http from 'k6/http';
 export function List_User_Address() {
     const url = 'https://pentest-ngc.one.th/api/backend/api/erp/list_user_address';
 
-    const payload = JSON.stringify({}); // ไม่มี data เลยส่งเป็น object ว่าง
 
     const params = {
         headers: {
@@ -28,7 +27,7 @@ export function List_User_Address() {
         },
     };
 
-    let res = http.post(url, payload, params);
+    const res = http.get(url, params);
 
     //console.log(res.body); // log response body
 

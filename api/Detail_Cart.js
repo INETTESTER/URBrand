@@ -21,6 +21,7 @@ export function Detail_Cart() {
   };
 
   let response = http.post(url, payload, { headers });
+  //console.log(response.body);
   return response
 
 }
